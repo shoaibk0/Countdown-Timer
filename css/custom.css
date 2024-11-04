@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url('/src/img/officebuilding.webp') center center;
+  background-size: cover;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title{
+  margin-top: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.col{
+  margin-top: 10px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.col div{
+  width: 250px;
+  text-align: center;
+}
+
+input{
+  width: 60%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* #modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  max-width: 80%; 
+  max-height: 80%;
+  border-radius: 10px;
+} */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation: fadeIn 0.5s; /* Fade in effect */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+  animation: zoomIn 0.5s; /* Zoom in effect */
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
